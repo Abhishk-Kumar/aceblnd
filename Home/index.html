@@ -57,14 +57,18 @@
             <h1 style="text-align: center;color: #000;">Visualize, Decide, Shop:</h1>
             <p>Explore a seamless retail experience with 'Shop by Videos' – where every product tells its story.</p>
         </div>
+        
 
+        <div class="video-scroll-container">
+            <div class="video-scroll-container">
+                <button class="scroll-left" onclick="scrollLeft()"><i class="fas fa-chevron-left"></i></button>
         <div class="card-container">
             <div class="product-card">
                 <img alt="Woman holding a laptop with text 'what I studied as a'" height="300"
                     src="https://storage.googleapis.com/a1aa/image/qK2TVXpbc7yeKCpua9SctO69dEqKKy6A3v9MytZxSMg.jpg"
                     width="200" />
                 <div class="product-card-content">
-                    <h3>Outshine Omega 3</h3>
+                    <h3>Outshine Omega 3</h3><br>
                     <p><span class="price">₹1,359</span><span class="original-price">₹1,599</span></p>
                 </div>
             </div>
@@ -73,7 +77,7 @@
                     src="https://storage.googleapis.com/a1aa/image/GW4F1PvIcugjkmG3Z4cMlB1DpCoyW52qRbrhCyWHf28.jpg"
                     width="200" />
                 <div class="product-card-content">
-                    <h3>Max Magnesium</h3>
+                    <h3>Max Magnesium</h3><br>
                     <p><span class="price">₹899</span><span class="original-price">₹999</span></p>
                 </div>
             </div>
@@ -82,7 +86,7 @@
                     src="https://storage.googleapis.com/a1aa/image/3TArp54vGIrdfoPD4l9_TOFMfth-tSW2AfActvW3QX0.jpg"
                     width="200" />
                 <div class="product-card-content">
-                    <h3>Lion's Mane Shroom Coffee</h3>
+                    <h3 style="text-wrap: wrap;">Lion's Mane Shroom Coffee</h3>
                     <p><span class="price">₹499</span></p>
                 </div>
             </div>
@@ -91,7 +95,7 @@
                     src="https://storage.googleapis.com/a1aa/image/VrRe1j5uvK8zRK3C21R9E07C-Nh2_cHYdPl2YZEmHTM.jpg"
                     width="200" />
                 <div class="product-card-content">
-                    <h3>Reishi Shroom Coffee</h3>
+                    <h3>Reishi Shroom Coffee</h3><br>
                     <p><span class="price">₹499</span></p>
                 </div>
             </div>
@@ -100,7 +104,7 @@
                     src="https://storage.googleapis.com/a1aa/image/L5L706n1Rt0USRMgGJePUOw6KHQssvOuD-unrMMLqTA.jpg"
                     width="200" />
                 <div class="product-card-content">
-                    <h3>Cordyceps Shroom Coffee</h3>
+                    <h3 style="text-wrap: wrap;">Cordyceps Shroom Coffee</h3>
                     <p><span class="price">₹499</span></p>
                 </div>
             </div>
@@ -109,11 +113,15 @@
                     src="https://storage.googleapis.com/a1aa/image/O-zjDC1S3DfOiL0QosdFz3AfUf6CqWZMY51OSk7JMSk.jpg"
                     width="200" />
                 <div class="product-card-content">
-                    <h3>Premium Plant Protein</h3>
+                    <h3>Premium Plant Protein</h3><br>
                     <p><span class="price">₹636</span></p>
                 </div>
             </div>
         </div>
+        <button class="scroll-right" onclick="scrollRight()"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
     </div>
 
 
@@ -139,11 +147,11 @@
                 <img alt="Plant-based protein products" height="200"
                     src="https://storage.googleapis.com/a1aa/image/pmeVZB5A2Oiw3ZcdRK0IKEdpwgWD_q8puhss36UMiCI.jpg"
                     width="200" />
-                <button>
+                <button class="ex">
                     Explore Now
                 </button>
             </div>
-            <div>
+            <div >
                 <h2>
                     Functional Drinks
                 </h2>
@@ -152,11 +160,13 @@
                 </p>
                 <p>
                     From: energy, focus, relaxation, deep hydration, immunity, to weight loss – we've got you covered.
+                    energy, focus, relaxation, deep hydration, energy, focus, relaxation, deep hydration, 
                 </p>
                 <img alt="Functional drinks products" height="200"
                     src="https://storage.googleapis.com/a1aa/image/gabN_OYnwkcTJ8ZBOexNeZ3st58K5E_57gRYBOOKIis.jpg"
                     width="200" />
-                <button>
+                    
+                <button class="ex">
                     Explore Now
                 </button>
             </div>
@@ -166,12 +176,14 @@
                 </h2>
                 <p>
                     Supercharge your everyday health with Advanced formulations, high-quality ingredients, and effective
-                    doses for optimal wellness.
+                    doses for optimal wellness.energy, focus, relaxation, deep hydration, <br>
+                    energy, focus, relaxation, deep hydration, energy, focus, relaxation, deep hydration, energy, focus, relaxation, deep hydration, 
+                    deep hydration, energy,
                 </p>
                 <img alt="Super essentials products" height="200"
                     src="https://storage.googleapis.com/a1aa/image/16B93l1K2HL0Qr2oODQJWABikSFr3eOAVpEnSNPuLcM.jpg"
                     width="200" />
-                <button>
+                <button class="ex">
                     Explore Now
                 </button>
             </div>
@@ -683,6 +695,17 @@
         <br>
         <div>Copyright© 2025 Ace Blend</div>
     </div>
+
+
+
+    <script>
+        function scrollLeft() {
+            document.querySelector('.card-container').scrollBy({ left: -300, behavior: 'smooth' });
+        }
+        function scrollRight() {
+            document.querySelector('.card-container').scrollBy({ left: 300, behavior: 'smooth' });
+        }
+    </script>
 </body>
 
 </html>
